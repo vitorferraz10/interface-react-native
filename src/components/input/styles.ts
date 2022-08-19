@@ -1,9 +1,11 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 
-export const Container = styled.View`
-  width: 100%;
+export const Container = styled.TextInput`
+  width: 80%;
   height: 54px;
-  
-  border-color: 1px solid #CECECE;
-  background-color: #fff;
+  margin: 0 auto;
+
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
+  color: ${({ theme }) => theme.COLORS.TEXT};
+  padding: 0 16px;
 `;

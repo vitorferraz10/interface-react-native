@@ -1,18 +1,11 @@
-
-import React from 'react';
-
-import {
-  useFonts,
-  Roboto_400Regular,
-  Roboto_500Medium,
-  Roboto_700Bold,
-} from "@expo-google-fonts/roboto";
-
-import THEME from './src/theme';
-
+import { Roboto_400Regular, Roboto_500Medium, Roboto_700Bold, useFonts } from '@expo-google-fonts/roboto';
 import AppLoading from 'expo-app-loading';
+import React from 'react';
 import { ThemeProvider } from 'styled-components/native';
+
 import { Home } from './src/screens/Home';
+import theme from './src/theme';
+
 
 export default function App() {
 
@@ -27,7 +20,7 @@ export default function App() {
   }
 
   return (
-    <ThemeProvider theme={THEME}>
+    <ThemeProvider theme={theme}>
       <Home />
     </ThemeProvider>
   );
