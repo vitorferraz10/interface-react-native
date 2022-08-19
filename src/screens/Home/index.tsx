@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import { StatusBar } from 'react-native';
 
 import coverImg from '../../assets/cover.png';
-import { Card } from '../../components/Card';
-import { Input } from '../../components/input';
-import { Container, Content, Header } from './styles';
+import { Carousel } from '../../components/Carousel';
+import { Container, Content, Header, Title } from './styles';
 
-
-export function Home(){
+export function Home() {
+  
  return (
    <Container>
-     <Header source={coverImg}>
-       <Input placeholder='Search...'/>
-     </Header>
+     <StatusBar />
+     <Header source={coverImg}></Header>
+     <Title>The top six of the premier league</Title>
      <Content>
-     <Card/>
+       <Carousel />
      </Content>
    </Container>
  );

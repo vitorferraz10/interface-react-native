@@ -8,7 +8,7 @@ export const Container = styled.View`
   height: 250px;
   background-color: ${({ theme }) => theme.COLORS.PRIMARY_800};
 
-  margin: 0 10px;
+  margin: 50px 20px;
   border-radius: 10px;
 `;
 

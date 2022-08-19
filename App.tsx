@@ -15,6 +15,9 @@ export default function App() {
     Roboto_700Bold,
   });
 
+  // const colorScheme = Appearance.getColorScheme();
+
+
   if (!fontsLoaded) { 
     return <AppLoading />;
   }
